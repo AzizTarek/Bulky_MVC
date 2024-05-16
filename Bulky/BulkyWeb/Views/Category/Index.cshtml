@@ -1,6 +1,5 @@
 ﻿@model List<Category>
 
-
 	<div class="container">
 		<div class="row pt-3 pb-3">
 			<div class="col-6">
@@ -37,7 +36,7 @@
 								<a asp-controller="Category" asp-action="Edit" asp-route-categoryId="@obj.Id" class="btn rounded btn-primary mx-3 ">
 									<i class="bi bi-pencil-square"></i> Edit
 								</a>
-								<a asp-controller="Category" asp-action="Delete" class="btn rounded btn-neutral text-danger  mx-3 ">
+							<a asp-controller="Category" asp-action="Delete" asp-route-categoryId="@obj.Id" class="btn rounded btn-neutral text-danger  mx-3 ">
 									<i class="bi bi-trash-fill"></i> Delete
 								</a>
 							</div>
